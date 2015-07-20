@@ -104,9 +104,9 @@ public class NavigationDrawerFragment extends Fragment {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view,
                                             int position, long id) {
-                        images[0] = R.drawable.homealt;
-                        images[1] = R.drawable.homealt;
-                        images[2] = R.drawable.homealt;
+                        images[0] = R.drawable.home_icon;
+                        images[1] = R.drawable.map_icon;
+                        images[2] = R.drawable.notification_icon;
                         selectedposition[0] = position;
                         mMyDrawerAdapter.notifyDataSetChanged();
                         selectItem(position);
@@ -116,8 +116,8 @@ public class NavigationDrawerFragment extends Fragment {
         titles = new String[] { getString(R.string.title_section1),
                 getString(R.string.title_section2),
                 getString(R.string.title_section3) };
-        images = new int[] { R.drawable.homealt, R.drawable.homealt,
-                R.drawable.homealt };
+        images = new int[] { R.drawable.home_icon, R.drawable.map_icon,
+                R.drawable.notification_icon};
         selectedposition = new int[] { mCurrentSelectedPosition };
 
         mMyDrawerAdapter = new MyDrawerAdapter(getActivity(), titles, images,

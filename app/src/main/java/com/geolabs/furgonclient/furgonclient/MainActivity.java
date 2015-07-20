@@ -51,7 +51,7 @@ public class MainActivity extends ActionBarActivity implements
                     .commit();
         } else if (position == 2) {
             fragmentManager.beginTransaction()
-                    .replace(R.id.container, NewsFragment.newInstance())
+                    .replace(R.id.container, NotificationsFragment.newInstance())
                     .commit();
         }
     }

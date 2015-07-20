@@ -10,17 +10,17 @@ import android.view.ViewGroup;
 /**
  * Created by delor34n on 20-07-15.
  */
-public class NewsFragment extends Fragment {
+public class NotificationsFragment extends Fragment {
 
     /**
      * Returns a new instance of this fragment for the given section number.
      */
-    public static NewsFragment newInstance() {
-        NewsFragment fragment = new NewsFragment();
+    public static NotificationsFragment newInstance() {
+        NotificationsFragment fragment = new NotificationsFragment();
         return fragment;
     }
 
-    public NewsFragment() {
+    public NotificationsFragment() {
     }
 
     @Override

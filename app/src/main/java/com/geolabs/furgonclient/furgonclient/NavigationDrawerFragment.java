@@ -104,19 +104,9 @@ public class NavigationDrawerFragment extends Fragment {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view,
                                             int position, long id) {
-                        if (position == 0) {
-                            images[0] = R.drawable.homealt;
-                            images[1] = R.drawable.homealt;
-                            images[2] = R.drawable.homealt;
-                        } else if (position == 1) {
-                            images[0] = R.drawable.homealt;
-                            images[1] = R.drawable.homealt;
-                            images[2] = R.drawable.homealt;
-                        } else if (position == 2) {
-                            images[0] = R.drawable.homealt;
-                            images[1] = R.drawable.homealt;
-                            images[2] = R.drawable.homealt;
-                        }
+                        images[0] = R.drawable.homealt;
+                        images[1] = R.drawable.homealt;
+                        images[2] = R.drawable.homealt;
                         selectedposition[0] = position;
                         mMyDrawerAdapter.notifyDataSetChanged();
                         selectItem(position);

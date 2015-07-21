@@ -1,6 +1,9 @@
 package com.geolabs.furgonclient.furgonclient;
 
 import android.app.Activity;
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -28,6 +31,20 @@ public class NotificationsFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_news, container,
                 false);
+
+        try
+        {
+            String url = "waze://?q=Planetario%20USACH";
+            Intent intent = new Intent( Intent.ACTION_VIEW, Uri.parse(url) );
+            startActivity( intent );
+        }
+        catch ( ActivityNotFoundException ex  )
+        {
+            Intent intent =
+                    new Intent( Intent.ACTION_VIEW, Uri.parse( "market://details?id=com.waze" ) );
+            startActivity(intent);
+        }
+
         return rootView;
     }
 

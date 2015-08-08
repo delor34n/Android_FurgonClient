@@ -1,4 +1,4 @@
-package com.geolabs.furgonclient.furgonclient;
+package com.geolabs.furgonclient;
 
 import android.support.v7.app.ActionBarActivity;
 import android.app.Activity;

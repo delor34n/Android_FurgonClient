@@ -1,4 +1,4 @@
-package com.geolabs.furgonclient.furgonclient;
+package com.geolabs.furgonclient;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -18,8 +18,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
      * Returns a new instance of this fragment for the given section number.
      */
     public static HomeFragment newInstance() {
-        HomeFragment fragment = new HomeFragment();
-        return fragment;
+        return new HomeFragment();
     }
 
     public HomeFragment() {
@@ -47,7 +46,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             Intent startMain = new Intent(Intent.ACTION_MAIN);
             startMain.addCategory(Intent.CATEGORY_HOME);
             startMain.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(startMain);
+            mainActivity.startActivity(startMain);
             //Update the status
             mainActivity.setServiceStatus(true);
         } else {

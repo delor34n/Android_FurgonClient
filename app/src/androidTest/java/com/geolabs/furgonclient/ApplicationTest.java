@@ -1,4 +1,4 @@
-package com.geolabs.furgonclient.furgonclient;
+package com.geolabs.furgonclient;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

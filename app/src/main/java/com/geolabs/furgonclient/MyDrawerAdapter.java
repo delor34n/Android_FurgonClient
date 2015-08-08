@@ -1,4 +1,4 @@
-package com.geolabs.furgonclient.furgonclient;
+package com.geolabs.furgonclient;
 
 import android.content.Context;
 import android.graphics.Color;

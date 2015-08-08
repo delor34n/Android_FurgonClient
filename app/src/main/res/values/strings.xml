@@ -15,4 +15,10 @@
     <string name="start_route">Iniciar recorrido</string>
     <string name="btn_start_route">Iniciar</string>
     <string name="btn_end_route">Detener</string>
+
+    <string name="service_started">Recorrido en curso</string>
+    <string name="service_stoped">Recorrido no iniciado</string>
+
+    <string name="company_name">FurgonTrack</string>
+
 </resources>

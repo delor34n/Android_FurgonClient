@@ -33,9 +33,19 @@
             android:id="@+id/btnStartRoute"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="60dp"
+            android:layout_marginBottom="30dp"
             android:textOn="@string/btn_end_route"
-            android:textOff="@string/btn_start_route"/>
+            android:textOff="@string/btn_start_route"
+            android:checked="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/service_stoped"
+            android:id="@+id/serviceStatus"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:textSize="12sp"/>
 
         <ImageView
             android:layout_width="wrap_content"

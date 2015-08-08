@@ -46,8 +46,8 @@ public class MainActivity extends ActionBarActivity implements
     protected void onResume() {
         super.onResume();
         if(getServiceStatus()){
-            TextView tv = (TextView) findViewById(R.id.serviceStatus);
-            tv.setText(R.string.service_started);
+            TextView vServiceStatus = (TextView) findViewById(R.id.serviceStatus);
+            vServiceStatus.setText(getString(R.string.service_started));
             ToggleButton toggleButton = (ToggleButton) findViewById(R.id.btnStartRoute);
             toggleButton.setChecked(true);
         }
@@ -57,7 +57,7 @@ public class MainActivity extends ActionBarActivity implements
     public void onBackPressed(){
         stopService(new Intent(MainActivity.this, BackgroundService.class));
         TextView tv = (TextView) findViewById(R.id.serviceStatus);
-        tv.setText(R.string.service_stoped);
+        tv.setText(R.string.service_not_started);
         ToggleButton toggleButton = (ToggleButton) findViewById(R.id.btnStartRoute);
         toggleButton.setChecked(false);
         finish();

@@ -7,12 +7,16 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
 /**
  * Created by delor34n on 20-07-15.
  */
 public class HomeFragment extends Fragment implements View.OnClickListener {
+
+    View rootView;
 
     /**
      * Returns a new instance of this fragment for the given section number.
@@ -27,7 +31,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_home, container,
+        this.rootView = inflater.inflate(R.layout.fragment_home, container,
                 false);
 
         ToggleButton startserviceButton = (ToggleButton) rootView.findViewById(R.id.btnStartRoute);
@@ -54,6 +58,11 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             mainActivity.stopService(new Intent(mainActivity, BackgroundService.class));
             //Updates the status
             mainActivity.setServiceStatus(false);
+            //Updates the status text in the view.
+            TextView vServiceStatus = (TextView)this.rootView.findViewById(R.id.serviceStatus);
+            vServiceStatus.setText(getString(R.string.service_stoped));
+            //Display message
+            Toast.makeText(getActivity(), getString(R.string.service_stoped), Toast.LENGTH_SHORT).show();
         }
     }
 

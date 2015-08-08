@@ -17,7 +17,8 @@
     <string name="btn_end_route">Detener</string>
 
     <string name="service_started">Recorrido en curso</string>
-    <string name="service_stoped">Recorrido no iniciado</string>
+    <string name="service_not_started">Recorrido no iniciado</string>
+    <string name="service_stoped">Recorrido detenido</string>
 
     <string name="company_name">FurgonTrack</string>
 

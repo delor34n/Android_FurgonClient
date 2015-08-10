@@ -29,6 +29,9 @@
             android:name=".BackgroundService"
             android:exported="false" >
         </service>
+
+        <meta-data android:name="com.skobbler.ngx.API_KEY" android:value="287a0eb68e78144ff765cd830914bb9799f2c4dec5f322895798dcb828457015"/>
+
     </application>
 
 </manifest>
